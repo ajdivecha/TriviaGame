@@ -52,7 +52,7 @@ var questions = [
     //Gary Sheffield(4) --> Willie Keeler(3), Zack Wheat(2), Duke Snider(1)
 
     q6= {
-    question: "Who wa the first player for the Dodgers franchise to win the NL MVP award?",
+    question: "Who was the first player for the Dodgers franchise to win the NL MVP award?",
     possibleAnswers: ["1. Jackie Robinson", "2. Clayton Kershaw", "3. Sandy Koufax", "4. Dolph Camilli"],
     flags: [false, false, false, true],
     answer: "4. Dolph Camilli",
