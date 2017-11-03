@@ -1,7 +1,28 @@
-#header {
-    background-image: url("../images/dodgersheader2.jpeg");
+.container-fluid {
+    background-color: black;
+    background-image: url("../images/dodge.jpeg");
 }
 
-.answerchoice {
-    background: dodgerblue;
+h3 {
+    text-align: center;
 }
+
+.timer {
+    text-align: center;
+    visibility: visible;
+    background-color: dodgerblue;
+    color: white;
+}   
+
+#a, #b, #c, #d {
+    visibility: visible;
+    background-color: dodgerblue;
+    color: white;
+   text-align: center;
+   align-items: center;
+}
+
+
+
+
+

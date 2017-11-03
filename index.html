@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8">
         
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta class="viewport" content="width=device-width, initial-scale=1.0">
         
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         
@@ -20,38 +20,90 @@
 
 </head>
 
-<body >
-        <h1>LA Dodgers</h1>
-        <h3>Trivia Game</h3>
-            
-        <div class="timer"></div>
+<body>
+  <!-- Jumbotron for my header and sub-header. I'm using it to try it out and see how I feel about the aesthetics of it.  -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="jumbotron">
+            <h1 class="text-center">LA Dodgers Trivia</h1>
+            <h3 class="text-center">How well do you know your LA Dodgers?</h3>
+            </div>
+        </div>
 
-        <div class="questions"></div>
+    <!-- The timer is set here so it will appear above the question and centered -->
+        <div class="wrapper">
 
-        <div class="answers">
-
-                <div>
-                        <button class="answerchoice" id="buttonA"><h4>A</h4></button>
+            <div class="row">
+                <div class="col-md-4"></div>
+                 <div class="col-md-4">
+                     <div class="panel panel-default" id="timerHolder">
+                        <div class="panel-body">
+                            <div class="timer">
+                                <div>
+                                    <span id="timer"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <br>
-                    <div>
-                        <button class="answerchoice" id="buttonB"><h4>B</h4></button>
-                    </div>
-                    <br>
-                    <div>
-                        <button class="answerchoice" id="buttonC"><h4>C</h4></button>
-                    </div>
-                    <br>
-                    <div>
-                        <button class="answerchoice" id="buttonD"><h4>D</h4></button>
-                    </div>
-                    <br>
+                    <div class="col-md-4"></div>
                 </div>
             
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="questions">
+                                    <h3 class="loadQ"></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+    
+<!-- Starting the question/answer portion of the quiz. -->
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p><button type="button" id="a" value=1 class="btn btn-default btn-lg btn-block"></button></p>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p><button type="button" id="b" value=2 class="btn btn-default btn-lg btn-block"></button></p>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p><button type="button" id="c" value=3 class="btn btn-default btn-lg btn-block"></button></p>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p><button type="button" id="d" value=4 class="btn btn-default btn-lg btn-block"></button></p>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
 
-<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Skranji" rel="stylesheet">
+        
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/javascript/app.js"></script>
-
+            
 </body>
-
 </html>
+
+
+
+
+    
